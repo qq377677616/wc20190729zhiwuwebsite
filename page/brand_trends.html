@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>品牌动态_植物医生官网 高山植物 纯净美肌</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="Keywords" Content="品牌动态">
+		<meta name="Description" Content="品牌动态">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/reset.css">
+		<script>
+			document.write('<link rel="stylesheet" href="../css/dr_main.css?v=' + new Date().getTime() + '"/>');
+		</script>
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/jquery.sPage.css">
+		<link href="../image/favicon.ico" rel="shortcut icon">
+		<style type="text/css">
+			.time-line-history {
+				width: 1013px;
+				height: 2418px;
+				margin-left: 527px;
+				margin-right: 382px;
+			}
+
+			/*gl-history*/
+			.info-gl-history {
+				width: 1084px;
+				margin: 0 auto;
+			}
+
+			.gl-history {
+				margin-top: 56px;
+				margin-bottom: 49px;
+			}
+
+			.gl-history-last-info {
+				margin-top: 79px;
+				margin-bottom: 90px;
+				text-align: center;
+
+			}
+
+			.gl-history-last-info-center>div {
+				font-family: MicrosoftYaHei;
+				font-size: 20px;
+				letter-spacing: 1px;
+				color: #3c3c3c;
+			}
+
+			.gl-history-last-info-center {
+				margin-top: 23px;
+				text-align: center;
+			}
+
+			.brand-photo-list {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.history-img {
+				width: 1084px;
+				height: 521px;
+				background-color: #b8da90;
+			}
+
+			.photo-box {
+				background: #fff;
+				box-shadow: -2.6px 3.1px 13px 0px rgba(98, 114, 108, 0.6);
+				margin: 30px;
+				width: 40%;
+			}
+
+			@media screen and (max-width: 1200px) {
+				.photo-box {
+					width: calc(100% - 0.3rem);
+					margin: 0 auto 0.2rem;
+				}
+
+				.photo-title {
+					/*padding-bottom:0.3rem;*/
+					/*margin-top:0.3rem;*/
+				}
+
+				.photo-img {
+					width: 100%;
+					height: 4rem;
+				}
+			}
+
+			@media screen and (min-width: 1200px) {
+				.photo-img {
+					padding: 0.3rem;
+				}
+
+				.new-coming .photo-title {
+					margin: 0.2rem 0;
+				}
+			}
+
+			.new-coming .photo-img {
+				height: auto;
+				padding: 0;
+			}
+
+			.photo-img {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+
+			}
+
+			.photo-box>div {
+				text-align: center;
+				width: 100%;
+			}
+
+			.brand-photo {
+				width: 1180px;
+				margin: 0 auto;
+			}
+
+			.brand-photo-box {
+				display: flex;
+				justify-content: center;
+			}
+
+			.brand-photo-list {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.photo-title {
+				font-size: 0.23rem;
+				padding: 0 30px;
+				margin-bottom: 0.2rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 100%;
+				text-align: center;
+			}
+
+			@media screen and (max-width: 1200px) {
+				.photo-title {
+					margin-top: 0.2rem;
+					font-size: 0.28rem;
+				}
+			}
+
+			.page_div {
+				display: flex;
+				justify-content: center;
+			}
+
+			.breand-new-list-box {
+				display: flex;
+				flex-wrap: wrap;
+				width: 80.5%;
+				min-width: 1180px;
+				margin: 0 auto;
+				justify-content: space-around;
+			}
+
+			.brand-news .breand-new-list-box {
+				width: 65%;
+			}
+			.report_box .brand-report-list-box {
+				width: 65%;
+			}
+
+			.brand-report-list-box {
+				display: flex;
+				width: 80.5%;
+				min-width: 1180px;
+				margin : 0 auto;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+
+			.brand-report-list-box .brand-news-list:nth-child(3n+2) {
+				margin: 0 30px;
+			}
+
+			.brand-news-list {
+				text-align: center;
+				margin-bottom: 30px;
+				max-width: 364px;
+				overflow: hidden;
+			}
+
+			.brand-news .brand-news-list:nth-child(3n+2) {
+				margin: 0 30px;
+			}
+
+			.brand-news-img {
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+				width: 330px;
+				height: 204px;
+				margin: 37px 16px;
+				position: relative;
+			}
+
+			.brand-news-img:before {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 160px;
+				height: 2px;
+				background: #8c8b8b;
+				margin: 0 auto;
+				top: -12px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.brand-news-img:after {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 160px;
+				height: 2px;
+				background: #8c8b8b;
+				margin: 0 auto;
+				bottom: -12px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.brand-news-box {
+				border: 1px solid #467e68;
+			}
+
+			.brand-news-search {
+				display: inline-block;
+				padding: 12px 41px;
+				border: 1px solid #8c8b8b;
+				margin-bottom: 43px;
+				cursor: pointer;
+			}
+
+			.brand-news-search:hover {
+				border-color: #477f69;
+				color: #477f69;
+			}
+
+			.brand-news-search:hover a {
+				color: #477f69 !important;
+			}
+
+			.brand-news-search a {
+				color: #8c8b8b !important;
+			}
+
+			.brand-news-title {
+				margin-top: 38px;
+				font-size: 20px;
+				padding: 0 16px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+
+			#page {
+				margin: 60px 0 80px 0;
+			}
+
+			#news_page {
+				margin: 72px 0 80px 0;
+			}
+
+			.report-descripts {
+				display: flex;
+				justify-content: center;
+				margin-top: 64px;
+				font-size: 18px;
+				padding-bottom: 18px;
+				border-bottom: 1px solid #d5d5d5;
+			}
+
+			.report-descripts span:nth-child(2) {
+				margin-left: 20px;
+			}
+
+			.report {
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			.report-title {
+				font-size: 26px;
+			}
+
+			.report-details {
+				margin-top: 44px;
+				margin-bottom: 20px;
+			}
+
+			.report-details p {
+				color: #909090;
+				line-height: 1.8;
+				font-size: 15px;
+			}
+
+			.report-count {
+				margin-left: 50px;
+			}
+
+			.dr-en-name {
+				letter-spacing: 10px;
+			}
+
+			.new-coming {
+				width: 85%;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.new-coming .photo-box {
+				width: 30%;
+				cursor: pointer;
+			}
+
+			.new-coming-box {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.new-coming-box {
+				margin-bottom: 20px;
+			}
+
+			.coming-list {
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				width: 100%;
+				margin-bottom: 50px;
+			}
+
+			.coming-list>div {
+				width: 50%;
+			}
+
+			.coming-list-img {
+				width: 100%;
+				height: 296px;
+				background: #4cae4c;
+			}
+
+			.coming-list-info {
+				margin-left: 20px;
+				position: relative;
+			}
+
+			.coming-list-descripts {
+				display: flex;
+				font-size: 16px;
+				color: #b7b7b7;
+				letter-spacing: 1px;
+			}
+
+			.coming-list-title {
+				font-size: 24px;
+				color: #313131;
+				letter-spacing: 3px;
+			}
+
+			.coming-list-details {
+				font-size: 18px;
+				color: #909090;
+				letter-spacing: 1px;
+				text-align: justify;
+				line-height: 1.5;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 6;
+				overflow: hidden;
+			}
+
+			.coming-list-descripts {
+				margin: 22px 0 12px 0;
+			}
+
+			.coming-search {
+				margin-top: 50px;
+				position: absolute;
+				bottom: 0;
+				font-size: 20px;
+			}
+
+			.coming-search a {
+				color: #477f69 !important;
+			}
+
+			.coming-list-count {
+				margin-left: 33px;
+			}
+
+			.coming-list-descripts>div span:nth-child(2) {
+				margin-left: 10px;
+			}
+
+			.dr-en-name {
+				font-size: 20px;
+				white-space: nowrap;
+				letter-spacing: 2px;
+			}
+
+			.news-details {
+				width: 3rem;
+			}
+
+			.news-details-title {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+			}
+
+			.new-coming .photo-box {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dr-main other-page screen-big">
+			<div class="dr-main-top">
+				<div class="col-lg-24 dr-main-top-box">
+					<div class="dr-logo"></div>
+					<div class="dr-nav-top">
+
+					</div>
+					<div class="dr-logo-nav">
+
+					</div>
+				</div>
+			</div>
+			<div class="dr-main-container">
+				<div class="dr-main-container-brand">
+					<div class="dr-main-container-brand-top">
+						<div class="brand-top-title">
+							<div class="top-title-name">品牌动态</div>
+							<div class="top-en-title-name dr-en-name">BRAND DYNAMICS</div>
+						</div>
+						<div class="top-type-list">
+							<ul>
+								<li type-index="0"><span class="dr_zn dr_hide">品牌新闻</span><span class="dr_en dr_hide">Brand news</span></li>
+								<li type-index="1"> <span class="dr_zn dr_hide">媒体报道</span><span class="dr_en dr_hide">Media reports</span></li>
+								<li type-index="2"> <span class="dr_zn dr_hide">品牌相册</span><span class="dr_en dr_hide">Brand photo album</span></li>
+								<li type-index="3"> <span class="dr_zn dr_hide">新闻源</span><span class="dr_en dr_hide">News source</span></li>
+							</ul>
+						</div>
+						<div class="type-index-info">
+							<div class="brand-news dr_hide">
+								<div class="breand-new-list-box">
+									<div class="brand-news-list">
+
+									</div>
+								</div>
+								<div class="questions-pagenation">
+									<div id="brand-news" class="demo"></div>
+								</div>
+							</div>
+							<div class="report_box dr_hide">
+								<div class="brand-report-list-box">
+									<div class="brand-report-list">
+
+									</div>
+								</div>
+								<div class="questions-pagenation">
+									<div id="brand-report" class="demo"></div>
+								</div>
+							</div>
+							<div class="brand-photo dr_hide">
+								<div class="brand-photo-box">
+									<div class="brand-photo-list">
+
+									</div>
+								</div>
+								<div class="questions-pagenation">
+									<div id="brand-photo" class="page_div">
+
+									</div>
+								</div>
+							</div>
+							<div class="new-coming dr_hide">
+								<div class="brand-photo-box">
+									<div class="brand-photo-list">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dr-main-footer other-footer screen-big">
+
+		</div>
+		<div class="other-main screen-small">
+			<div class="common-top">
+				<div class="main-top">
+
+				</div>
+				<div class='swiper_search dr_search_box'></div>
+				<div class="swiper-pagination">
+					<ul class="swiper-nav-title swiper-pagination"></ul>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-content-bottom">
+					<div class="main-content-tab" id="swiper-nav">
+						<ul class="swiper-wrapper main-nav">
+							<div class="swiper-slide news">
+								<div class="news-list">
+
+								</div>
+							</div>
+							<div class="swiper-slide report">
+								<div class="report-list">
+
+								</div>
+							</div>
+							<div class="swiper-slide news-photo">
+								<div class="photo-list">
+
+								</div>
+							</div>
+							<div class="swiper-slide news-feed">
+								<div class="topic-list">
+
+								</div>
+							</div>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="common-dialog">
+
+			</div>
+			<div class="menu-list">
+
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jsmodern.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/toast.js"></script>
+	<script>
+		document.write('<script language="javascript" src="../js/dr-main.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<script src="../js/remAdaptation.js"></script>
+	<script src="../js/time-history.js"></script>
+	<script type="text/javascript" src="../js/page/jquery.sPage.js"></script>
+	<script src="../js/swiper/swiper.min.js"></script>
+
+	<script src="../js/jquery.shCircleLoader.js"></script>
+	<script>
+		document.write('<script language="javascript" src="../js/main.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<script>
+		document.write('<script language="javascript" src="../js/trends.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<!-- 百度统计 -->
+	<script type="text/javascript">
+		document.write("<div style='display:none;'>");//增加一个display:none的DIV
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe2679b0698117173382a65620afd3268' type='text/javascript'%3E%3C/script%3E"));
+		document.write("</div>");//关闭DIV标签
+	</script>
+	
+	<!-- 百度商桥 -->
+	<script type="text/javascript">
+		document.write("<div style='display:none;'>");//增加一个display:none的DIV
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb3d80609ff324ecc73b0d4f951b50e81' type='text/javascript'%3E%3C/script%3E"));
+		document.write("</div>");//关闭DIV标签
+	</script>
+	
+	 
+	<!--植物医生GA代码：-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-53569307-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	<script type="text/javascript">
+	    document.write(decodeURI("%3Cscript src='"+ctx+"/visit_log?url=")+encodeURIComponent(document.location.href)+decodeURI("&referrer=")+encodeURIComponent(document.referrer)+decodeURI("' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</html>

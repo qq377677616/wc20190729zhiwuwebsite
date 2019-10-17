@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>植物医生官网 高山植物 纯净美肌</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="Keywords" Content="">
+		<meta name="Description" Content="">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/dr_main.css">
+		<link rel="stylesheet" type="text/css" href="../css/demo.css">
+		<link rel="stylesheet" type="text/css" href="../css/jquery.sPage.css">
+		<link href="../image/favicon.ico" rel="shortcut icon">
+		<!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+		<style type="text/css">
+			.top_topic {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				padding: 15px 0;
+				border-bottom: 2px solid #eee;
+			}
+
+			.top_topic .topic_type {
+				display: flex;
+				font-size: 16px;
+			}
+
+			.topic_type li {
+				margin-right: 16px;
+				cursor: pointer;
+			}
+
+			.top_topic_title {
+				font-size: 26px;
+
+			}
+
+			.container_main {
+				width: 65%;
+				margin: 30px auto;
+				padding: 0 30px;
+			}
+
+			.top_topic_describe {
+				font-size: 14px;
+				margin-top: 10px;
+				width: 100%;
+			}
+
+			.moment_title {
+				border-bottom: 2px solid #4f8136;
+				font-size: 0.25rem;
+				padding: 10px 0;
+			}
+
+			.search_type {
+				margin: 16px 0;
+			}
+
+			.search_type ul {
+				display: flex;
+				justify-content: flex-start !important;
+				flex-wrap: wrap;
+			}
+
+			.search_type li {
+				padding: 0.1rem 0.1rem;
+				margin-right: 0.2rem;
+				border: 1px solid #477f69;
+				border-radius: 6px;
+				text-align: center;
+				color: #477f69;
+				cursor: pointer;
+				margin-bottom: 0.1rem;
+			}
+
+			.tit {
+				color: #e9cb02 !important;
+			}
+
+			.fans-questions-list a {
+				color: #e9cb02 !important;
+			}
+
+			.active {
+				color: #477f69;
+			}
+
+			.btn_active {
+				background: #477f69;
+				color: #fff;
+			}
+
+			.topic_left {
+				width: 70%;
+			}
+
+			.topic_left .dr-plant-fans-area {
+				width: 100%;
+			}
+
+			.topic_right {
+				width: 25%;
+				margin-left: 5%;
+				color: #fff;
+				font-size: 0.16rem;
+
+			}
+
+			.topic_center {
+				display: flex;
+
+			}
+
+			.topic_center img {
+				max-width: 100%;
+				border-radius: 6px;
+			}
+
+			.topic_right>div {
+				border-radius: 6px;
+				margin-top: 10px;
+				background: #477f69;
+				padding: 20px 20px;
+			}
+
+			.topic_right>div .title {
+				font-size: 0.2rem;
+				padding-bottom: 0.1rem;
+				border-bottom: 1px solid #fff;
+			}
+
+			.topic_right>div ul li {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				margin-top: 15px;
+				cursor: pointer;
+			}
+
+			.topic_right>div ul li>div {
+				margin-top: 15px;
+			}
+
+			.hot_bottom ul li div {
+				text-align: center;
+			}
+
+			.fans-questions-list:nth-child(1) {
+				margin-top: 68px;
+			}
+
+			.momemt_box {
+				max-width: 70%;
+			}
+
+			.hot_product {
+				margin-top: 15px;
+			}
+
+			.hot_product div {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+
+			.questions-content {
+				font-size: 16px;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 3;
+				overflow: hidden;
+			}
+
+			.topic_right>div ul li:hover {
+				text-decoration: underline;
+			}
+
+			.headImg {
+				width: 100%;
+			}
+
+			.headImg img {
+				max-width: 100%;
+			}
+
+			@media screen and (max-width: 1200px) {
+				.container_main {
+					width: 100%;
+				}
+
+				.topic_left {
+					width: 100%;
+				}
+
+				.momemt_box {
+					width: 100%;
+				}
+
+				.top_topic {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+
+				.topic_type {
+					margin: 0.2rem 0 0.1rem;
+					flex-wrap: wrap;
+				}
+
+				.main-content-bottom {
+					padding-top: 0;
+					padding-bottom: 0.2rem;
+				}
+			}
+
+			.search_type ul li.active {
+				background: #477f69;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dr-main other-page screen-big">
+			<div class="dr-main-top">
+				<div class="col-lg-24 dr-main-top-box">
+					<div class="dr-logo"></div>
+					<div class="dr-nav-top">
+
+					</div>
+					<div class="dr-logo-nav">
+
+					</div>
+				</div>
+			</div>
+			<div class="dr-main-container">
+				<div class="dr-main-container-brand">
+					<div class="dr-main-container-brand-top">
+
+						<div class="headImg">
+							<img src="../image/topic_1.png" alt="">
+						</div>
+						<div class="container_main">
+							<div class="top_topic">
+								<div class="top_topic_title_box">
+									<div class="top_topic_title">凝露专题</div>
+									<div class="top_topic_describe">高山植物 纯净美肌</div>
+								</div>
+								<ul class="topic_type">
+									<li>凝露专题</li>
+									<li>石斛兰专题</li>
+									<li>晚安面膜</li>
+								</ul>
+							</div>
+							<div class="momemt_box">
+								<div class="moment_title tit">植物医生凝露百科</div>
+							</div>
+							<div class="topic_center">
+								<div class="topic_left">
+									<div class="type-index-info brand_kinds">
+										<div class="search_type">
+											<ul>
+												<!--                                        <li>全部</li>-->
+												<!--                                        <li>凝露分类</li>-->
+												<!--                                        <li>凝露作用</li>-->
+												<!--                                        <li>凝露怎么用</li>-->
+												<!--                                        <li>凝露乳霜区别</li>-->
+												<!--                                        <li>哪种凝露好</li>-->
+											</ul>
+										</div>
+										<div class="dr-plant-fans-area">
+											<div class="fans-questions-box">
+												<div class="fans-questions-list-box">
+
+												</div>
+												<div class="questions-pagenation">
+													<div id="myPage" class="demo"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="topic_right">
+									<div class="hot_top">
+										<div class="title">
+											<span class="dr_zn dr_hide">热门问答</span>
+											<span class="dr_en dr_hide">Popular answers</span>
+										</div>
+										<div>
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div class="hot_center">
+										<div class="title">
+											<span class="dr_zn dr_hide">大家都在搜</span>
+											<span class="dr_en dr_hide">Everybody's searching</span>
+										</div>
+										<div>
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div class="hot_bottom">
+										<div class="title">
+											<span class="dr_zn dr_hide">热销产品</span>
+											<span class="dr_en dr_hide">Hot-sale products</span>
+
+										</div>
+										<div class="hot_product">
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dr-main-footer other-footer screen-big">
+
+		</div>
+		<div class="screen-small no_nav other-main">
+			<div class="common-top">
+				<div class="main-top">
+
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-content-bottom">
+					<div class="main-content-tab" id="swiper-nav">
+						<div class="headImg">
+							<img src="../image/topic_1.png" alt="">
+						</div>
+						<div class="container_main">
+							<div class="top_topic">
+								<div class="top_topic_title_box">
+									<div class="top_topic_title">凝露专题</div>
+									<div class="top_topic_describe">高山植物 纯净美肌</div>
+								</div>
+								<ul class="topic_type">
+									<li index="0">凝露专题</li>
+									<li index="1" class="active">石斛兰专题</li>
+									<li index="2">晚安面膜</li>
+								</ul>
+							</div>
+							<div class="momemt_box">
+								<div class="moment_title tit">植物医生凝露百科</div>
+							</div>
+							<div class="topic_center">
+								<div class="topic_left">
+									<div class="type-index-info brand_kinds">
+										<div class="search_type">
+											<ul>
+												<li>全部</li>
+												<li>凝露分类</li>
+												<li>凝露作用</li>
+												<li>凝露怎么用</li>
+												<li>凝露乳霜区别</li>
+												<li>哪种凝露好</li>
+											</ul>
+										</div>
+										<div class="dr-plant-fans-area">
+											<div class="fans-questions-box">
+												<div class="topic_list">
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="common-dialog">
+
+			</div>
+			<div class="menu-list">
+
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/toast.js"></script>
+	<script src="../js/dr-main.js"></script>
+	<script src="../js/remAdaptation.js"></script>
+	<script src="../js/time-history.js"></script>
+	<script src="../js/jquery.shCircleLoader.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/page/jquery.sPage.js"></script>
+	<script src="../js/topic.js"></script>
+</html>

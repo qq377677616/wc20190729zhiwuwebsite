@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>植物医生实体店铺地址详细列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="Keywords" Content="">
+		<meta name="Description" Content="植物医生实体店铺遍布全国多个大中城市，用户可以在护理体验店及生活馆购买植物医生的植物护肤化妆品。">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/reset.css">
+		<script>
+			document.write('<link rel="stylesheet" href="../css/dr_main.css?v=' + new Date().getTime() + '"/>');
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/demo.css">
+		<link href="../image/favicon.ico" rel="shortcut icon">
+		<style type="text/css">
+			@media screen and (max-width: 1200px) {
+				.store_box {
+					width: 100%;
+					margin: 30px auto;
+					font-size: 0.3rem;
+					line-height: 1.5;
+				}
+
+				.r_top {
+					margin-bottom: 0.2rem;
+				}
+
+				.type_box>div {
+					margin: 10px 0;
+				}
+
+				.img_box {
+					text-align: center;
+					margin: 20px 0;
+				}
+
+				.img_title {
+					color: #477f69;
+					font-size: 0.35rem;
+					margin-bottom: 20px;
+				}
+
+				.store_title {
+					color: #477f69;
+					font-size: 0.35rem;
+				}
+
+				.img_content img {
+					width: calc(80% - 0.4rem);
+					min-width: 3.5rem;
+					min-height: 3.5rem;
+					padding: 0.4rem;
+					background: #fff;
+					box-shadow: 0 0 15px 0 #000;
+				}
+
+				.r_top {
+					font-size: 0.35rem;
+					display: flex;
+					justify-content: center;
+				}
+
+				.rt_tit {
+					display: inline-block;
+					padding: 10px 15px;
+					background: #477f69;
+					color: #fff;
+				}
+			}
+
+			@media screen and (min-width: 1200px) {
+				.store_box {
+					width: 70%;
+					margin: 30px auto;
+					font-size: 18px;
+					line-height: 1.5;
+				}
+
+				.type_box>div {
+					margin: 10px 0;
+				}
+
+				.img_box {
+					text-align: center;
+					margin: 20px 0;
+				}
+
+				.img_title {
+					color: #477f69;
+					font-size: 0.24rem;
+					margin-bottom: 20px;
+				}
+
+				.store_title {
+					color: #477f69;
+					font-size: 0.24rem;
+				}
+
+				.img_content img {
+					width: calc(80% - 0.4rem);
+					min-width: 450px;
+					min-height: 350px;
+					padding: 0.4rem;
+					background: #fff;
+					box-shadow: 0 0 10px 0 #000;
+				}
+
+				.r_top {
+					font-size: 0.24rem;
+					display: flex;
+					justify-content: center;
+				}
+
+				.rt_tit {
+					display: inline-block;
+					padding: 10px 15px;
+					background: #477f69;
+					color: #fff;
+				}
+			}
+
+			.address-list {
+				text-align: center;
+				padding: 0.2rem 0;
+			}
+
+			.top-en-title-name {
+				letter-spacing: 3px;
+			}
+
+			.dr-main-container-brand-top {
+				width: 65%;
+				margin: 0 auto;
+			}
+
+			.img-broadcast {
+				width: 100%;
+				height: 450px;
+				margin-top: 59px;
+				margin-bottom: 43px;
+			}
+
+			.img-broadcast .swiper-container {
+				height: 100%;
+			}
+
+			table {
+				border-right: 0px solid #badbce;
+				border-bottom: 1px solid #badbce
+			}
+
+			table td {
+				border: 1px solid #badbce;
+				padding: 15px 30px;
+				text-align: center
+			}
+
+			thead td {
+				border: none;
+			}
+
+			thead tr {
+				border: none;
+			}
+
+			table {
+				width: 100%;
+			}
+
+			thead td {
+				font-size: 20px;
+				color: #282828;
+			}
+
+			thead td:nth-child(1) {
+				width: 30%;
+			}
+
+			thead td:nth-child(2) {
+				width: 70%;
+			}
+
+			.form-box {
+				display: flex;
+				justify-content: flex-end;
+			}
+
+			.form-box>div {
+				display: flex;
+				align-items: center;
+			}
+
+			.form-box>div>.form-control {
+				width: 150px;
+			}
+
+			.form-box>div>.form-control:nth-child(2) {
+				margin: 0 15px;
+			}
+
+			.form-box .btn {
+				background: #477f69;
+				color: #fff;
+				padding: 8px 30px;
+				min-width: 112px;
+				min-height: 38px;
+			}
+
+			.search-box {
+				margin-bottom: 80px;
+			}
+
+			.brand-top-title {
+				width: 85% !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dr-main other-page screen-big store_show_box">
+			<div class="dr-main-top">
+				<div class="col-lg-24 dr-main-top-box">
+					<div class="dr-logo"></div>
+					<div class="dr-nav-top">
+
+					</div>
+					<div class="dr-logo-nav">
+
+					</div>
+				</div>
+			</div>
+			<div class="dr-main-container">
+				<div class="dr-main-container-brand">
+					<div class="dr-main-container-brand-top">
+						<div class="brand-top-title">
+							<div class="top-title-name">
+								植物医生门店
+							</div>
+							<div class="top-en-title-name dr-en-name">Plant doctor store</div>
+							<div class="top-title-main">
+
+							</div>
+						</div>
+						<div class="store_box">
+							<div class="store_top">
+
+							</div>
+							<div class="store_bottom">
+								<div class="r_top">
+									<div class="rt_tit">
+										<td><span class="dr_zn dr_hide">该市其他植物医生门店地址</span><span class="dr_en dr_hide">Other stores in the city</span></td>
+									</div>
+								</div>
+								<div class="r_content">
+									<div class="address-list-box">
+										<table border="1">
+											<thead>
+												<tr>
+													<td><span class="dr_zn dr_hide">门店名称</span><span class="dr_en dr_hide">Store name</span></td>
+													<td><span class="dr_zn dr_hide">门店地址</span><span class="dr_en dr_hide">Store address</span></td>
+												</tr>
+											</thead>
+											<tbody>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dr-main-footer other-footer screen-big">
+
+		</div>
+		<div class="other-main screen-small no_nav">
+			<div class="common-top">
+				<div class="main-top">
+
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-content-bottom">
+					<div class="main-content-tab" id="swiper-nav">
+						<div class="dr_search_box">
+							<div class="area-main-title">
+								<div class="cn-title">植物医生门店</div>
+								<div class="en-title">PLANT DOCTOR STORE</div>
+								<div class="top-title-main"></div>
+							</div>
+							<div class="store_box">
+								<div class="store_top">
+									<div class="type_box">
+										<div class="store_title">植物医生北京望京麒麟社新天地店面地址？怎么联系？</div>
+										<div class="address">
+											地址：北京市朝阳区香槟路66号（广顺北大街广顺桥西北角）欧尚购物中心内一层肯德基对面植物医生
+										</div>
+										<div class="type">
+											乘车方式：乘坐416、404、409、944、966、707路广顺南大街下车前走左拐
+										</div>
+									</div>
+									<div class="img_box">
+										<div class="img_title">
+											<span class="dr_zn dr_hide">门店实景图</span>
+											<span class="dr_en dr_hide">A real view of the store</span>
+										</div>
+										<div class="img_content">
+											<img src="http://exhb.drplant.com.cn/dp-vfs/api/exhibit/011581/201901/pic1.jpeg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="store_bottom">
+									<div class="r_top">
+										<div class="rt_tit">
+											<span class="dr_zn dr_hide">该市其他植物医生门店</span>
+											<span class="dr_en dr_hide">Other stores in the city</span>
+										</div>
+									</div>
+									<div class="r_content">
+										<div class="address-list">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="common-dialog">
+
+			</div>
+			<div class="menu-list">
+
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/toast.js"></script>
+	<script src="../js/remAdaptation.js"></script>
+	<script src="../js/jquery.shCircleLoader.js"></script>
+	<script>
+		document.write('<script language="javascript" src="../js/dr-main.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<script>
+		document.write('<script language="javascript" src="../js/main.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<script>
+		document.write('<script language="javascript" src="../js/store.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<!-- 百度统计 -->
+	<script type="text/javascript">
+		document.write("<div style='display:none;'>"); //增加一个display:none的DIV
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol +
+			"hm.baidu.com/h.js%3Fe2679b0698117173382a65620afd3268' type='text/javascript'%3E%3C/script%3E"));
+		document.write("</div>"); //关闭DIV标签
+	</script>
+
+	<!-- 百度商桥 -->
+	<script type="text/javascript">
+		document.write("<div style='display:none;'>"); //增加一个display:none的DIV
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol +
+			"hm.baidu.com/h.js%3Fb3d80609ff324ecc73b0d4f951b50e81' type='text/javascript'%3E%3C/script%3E"));
+		document.write("</div>"); //关闭DIV标签
+	</script>
+
+
+	<!--植物医生GA代码：-->
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-53569307-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script type="text/javascript">
+		document.write(decodeURI("%3Cscript src='" + ctx + "/visit_log?url=") + encodeURIComponent(document.location.href) +
+			decodeURI("&referrer=") + encodeURIComponent(document.referrer) + decodeURI(
+				"' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</html>

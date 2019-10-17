@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>找回密码_植物医生官网 高山植物 纯净美肌</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name=”Keywords” Content=”找回密码″>
+		<meta name=”Description” Content=”找回密码”>
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/remAdaptation.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/dr_main.css">
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" href="../css/datepicker.css">
+		<link href="../image/favicon.ico" rel="shortcut icon">
+		<style>
+			html {
+            background: #fff;
+        }
+        .get_pwd {
+            text-align: left;
+            font-size:20px;
+            color:#477f69;
+        }
+    </style>
+	</head>
+	<body>
+		<div class="dr-main other-page screen-big no_more" id="login_wrapper">
+			<div class="dr-main-top">
+				<div class="col-lg-24 dr-main-top-box">
+					<div class="dr-logo"></div>
+					<div class="dr-nav-top">
+
+					</div>
+					<div class="dr-logo-nav">
+
+					</div>
+				</div>
+				<div class="nav-info">
+					<div class="brand-history dr_hide">
+						<div class="brand-top">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dr-main-container">
+				<div class="login-box" style="visibility: hidden">
+					<div class="login-form">
+						<div>
+							<h3 class="get_pwd">找回密码</h3>
+							<form class="bs-example bs-example-form" role="form">
+								<div class="input-group input-group-lg">
+									<label> <span class="dr_zn dr_hide">手机</span><span class="dr_en dr_hide">Phone</span></label>
+									<div class="input-right">
+										<input type="text" autocomplete="off" class="r_phone form-control" placeholder="phone">
+									</div>
+								</div>
+								<div class="input-group input-group-lg">
+									<label for="r_code"><span class="dr_zn dr_hide">验证码</span><span class="dr_en dr_hide">Code</span></label>
+									<div class="input-right">
+										<input type="text" autocomplete="off" id="r_code" class="r_code form-control" placeholder="code">
+										<div class="btn-send btn btn-default"><span class="dr_zn dr_hide">验证码</span><span class="dr_en dr_hide">Code</span></div>
+									</div>
+								</div>
+
+								<div class="input-group">
+									<label for="r_pwd"> <span class="dr_zn dr_hide">密码</span><span class="dr_en dr_hide">Password</span></label>
+									<input type="password" autocomplete="off" class="form-control pwd" placeholder="password" id="r_pwd">
+								</div>
+								<div class="input-group">
+									<label for="r_sure_pwd"><span class="dr_zn dr_hide">确认密码</span><span class="dr_en dr_hide">Confirm</span></label>
+									<input type="password" autocomplete="off" class="form-control rpwd" placeholder="confirm" id="r_sure_pwd">
+								</div>
+								<div class="login-button">
+									<div class="btn btn-info btn-register">
+										<span class="dr_zn dr_hide">提交</span>
+										<span class="dr_en dr_hide">Submit</span>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dr-main-footer other-footer screen-big">
+
+		</div>
+
+
+		<div class="other-main no_nav screen-small login_max">
+			<div class="common-top">
+				<div class="main-top">
+
+				</div>
+			</div>
+
+			<div class="login-main">
+				<div class="login-form">
+					<div class="login-form-img">
+						<div class="login-form-img-info"></div>
+					</div>
+					<div class="input-group-box">
+						<div class="input-group"><input type="text" class="form-control r_phone" placeholder="phone"></div>
+						<div class="input-group input-pwd">
+							<input onfocus="Focus()" onblur="Blur()" type="text" class="form-control r_code" placeholder="code">
+							<div class="btn btn-send btn-code btn-submit"><span class="dr_zn dr_hide">验证码</span> <span class="dr_en dr_hide">code</span></div>
+						</div>
+						<div class="input-group"><input onfocus="Focus()" onblur="Blur()" type="password" class="form-control pwd"
+							 placeholder="password"></div>
+						<div class="input-group"><input onfocus="Focus()" onblur="Blur()" type="password" class="form-control rpwd"
+							 placeholder="confirm password"></div>
+						<div class="submit-box">
+							<div class="btn btn-submit btn-register"><span class="dr_zn dr_hide">提交</span> <span class="dr_en dr_hide">Submit</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="common-dialog">
+
+			</div>
+			<div class="menu-list">
+
+			</div>
+		</div>
+
+		<!--<div class="login-main screen-small">-->
+		<!--    <div class="login-form">-->
+		<!--        <div class="login-form-img">-->
+		<!--            <div class="login-form-img-info"></div>-->
+		<!--        </div>-->
+		<!--        <div class="input-group-box">-->
+		<!--            <div class="input-group"><input type="text" class="form-control r_phone" placeholder="请输入手机号"></div>-->
+		<!--            <div class="input-group input-pwd">-->
+		<!--                <input type="text" class="form-control r_code" placeholder="请输入验证码">-->
+		<!--                <div class="btn r_btn-send btn-code btn-submit">验证码</div>-->
+		<!--            </div>-->
+		<!--            <div class="input-group"><input type="text" class="form-control r_mail" placeholder="请输入邮箱"></div>-->
+		<!--            <div class="input-group">-->
+		<!--                <div class="input-right">-->
+		<!--                    <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day mt10 birth-time-box">-->
+		<!--                        <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>-->
+		<!--                        <input type="text" autocomplete="off" name="" placeholder="选择生日" readonly class="birth-time c-datepicker-data-input only-date" value="" id="birth">-->
+		<!--                    </div>-->
+		<!--                </div>-->
+		<!--            </div>-->
+		<!--            <div class="input-group"><input type="password" class="form-control pwd" placeholder="请输入密码"></div>-->
+		<!--            <div class="input-group"><input type="password" class="form-control rpwd" placeholder="确认密码"></div>-->
+		<!--            <div class="submit-box">-->
+		<!--                <div class="btn btn-submit btn-register">注册</div>-->
+		<!--            </div>-->
+		<!--            <div class="login-box">-->
+		<!--                <div>我已注册会员，<a href="login.html">前往登录</a></div>-->
+		<!--            </div>-->
+		<!--        </div>-->
+
+		<!--    </div>-->
+		<!--</div>-->
+	</body>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/swiper/swiper.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/moment.min.js"></script>
+	<script src="../js/datepicker.all.js"></script>
+	<script src="../js/toast.js"></script>
+	<script src="../js/dr-main.js"></script>
+	<script src="../js/jquery.shCircleLoader.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/forget.js"></script>
+</html>

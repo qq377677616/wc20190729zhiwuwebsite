@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心_植物医生官网 高山植物 纯净美肌</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="Keywords" Content="">
+		<meta name="Description" Content="个人中心">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/reset.css">
+		<script>
+			document.write('<link rel="stylesheet" href="../css/dr_main.css?v=' + new Date().getTime() + '"/>');
+		</script>
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/demo.css">
+		<link href="../image/favicon.ico" rel="shortcut icon">
+		<!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+		<style>
+			.member_top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .member_img {
+            width: 1.5rem;
+            height:1.5rem;
+            border-radius: 50%;
+            background: url('../image/dr_logo.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .memeber_descript {
+            margin-top:0.5rem;
+			margin-bottom:0.3rem;
+            font-size: 15px;
+        }
+        .member_box {
+            width: 600px;
+            margin: 0.5rem auto;
+            font-size:15px;
+        }
+        .product-type >div {
+            padding:10px 20px;
+            font-size: 12px;
+        }
+        .form_show {
+            font-size: 14px;
+        }
+        .form_show > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding:10px 0;
+        }
+        .form_show > div >div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .form_show > div >label:nth-child(1) {
+            width: 20%;
+            font-size:15px;
+        }
+        .input-right {
+            width: 80%;
+            font-size:15px;
+        }
+        .form_show .input-right {
+            width: 60%;
+        }
+        input[type=checkbox] {
+            margin-top: 0;
+        }
+        .product-type {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin:30px;
+            height: 54px;
+            border-radius: 26px;
+        }
+        .form_detail {
+            margin-left:20%;
+        }
+        .form_detail label {
+            font-size:15px;
+            white-space: nowrap;
+        }
+        .form_detail .input-right {
+            margin-left:20px;
+        }
+        .form_detail > div {
+            display: flex;
+            margin:20px 0;
+        }
+        .form_detail > div >div {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .radio-inline,.checkbox-inline {
+            padding-left:20px !important;
+        }
+        input[type=radio] {
+            margin:0;
+        }
+        .address_box > div {
+            display: flex;
+            align-items: center;
+            margin-bottom:20px;
+        }
+        .address_box > div >label:nth-child(1) {
+            width: 20%;
+            min-width: 50px;
+        }
+        .address_box .input-right select {
+            margin-right:10px;
+        }
+        .address_box .btn-update {
+            background-color: #467e68;
+            color:#fff;
+            display: inline-block;
+            margin-left:20%;
+            padding:  5px 20px;
+        }
+        .update_box .btn-update {
+            background-color: #467e68;
+            color:#fff;
+            display: inline-block;
+            margin-left:calc(15% + 20px);
+            padding:  5px 20px;
+        }
+		.update_box .btn-update-pwd {
+		    background-color: #467e68;
+		    color:#fff;
+		    display: inline-block;
+		    margin-left:calc(15% + 20px);
+		    padding:  5px 20px;
+		}
+        .update_box .input-group {
+            display: flex;
+            align-items: center;
+        }
+        .update_box label {
+            width: 15%;
+			min-width: 75px;
+            margin-right:20px;
+            text-align: right;
+        }
+        .update_box > div {
+            display: flex;
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1200px) {
+
+        }
+        @media screen and (max-width: 1200px) {
+            .member_box {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 0.3rem;
+            }
+            .swiper-nav-title {
+                justify-content: center;
+            }
+            .swiper-nav-title li:nth-child(1) {
+                margin-right:2rem;
+            }
+        }
+        .truss {
+            color:  #477f69 !important;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .truss:hover {
+            text-decoration: underline !important;
+            opacity: 0.8;
+        }
+        .vip_dialog_bg {
+            width: 100%;
+            height : 100%;
+            background: rgba(0,0,0,0.2);
+            position: fixed;
+            top:0;
+            left:0;
+            z-index: 9999;
+        }
+        .vip_dialog {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            background: #fff;
+            padding: 0 20px;
+        }
+        .vip_dialog img {
+            max-width: 100%;
+        }
+        .rain_SCTXT {
+            height: 80px;
+            border-bottom: 1px solid #acafb0;
+            font-size: 24px;
+            text-align: center;
+            line-height: 80px;
+            overflow: hidden;
+            position: relative;
+        }
+        .rain_SCTXB {
+            margin-top: 20px;
+            padding-bottom: 30px;
+        }
+        .rain_SCTXB .rain_SCTXBM {
+            margin-top: 25px;
+            min-height: 26px;
+            line-height: 26px;
+        }
+        .rain_SCTXTN {
+            position: absolute;
+            right: 2px;
+            top: 18px;
+            font-size: 12px;
+            color: #acafb0;
+            font-family: "Arial";
+            line-height: 18px;
+        }
+        .phone_code {
+            margin: 0 5px;
+        }
+        .member .dr-main-container {
+            justify-content: flex-start;
+        }
+        .member_img {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .imghead {
+            width: 150px !important;
+            height:150px !important;
+            border-radius: 50%;
+            object-fit: cover;
+            -o-object-fit: cover;
+            object-position: center center;
+            -o-object-position: center center;
+        }
+    </style>
+	</head>
+	<body>
+		<div class="dr-main other-page screen-big seminar member">
+			<div class="dr-main-top">
+				<div class="col-lg-24 dr-main-top-box">
+					<div class="dr-logo"></div>
+					<div class="dr-nav-top">
+
+					</div>
+					<div class="dr-logo-nav">
+
+					</div>
+				</div>
+			</div>
+			<div class="dr-main-container">
+				<div class="dr-main-container-brand">
+					<div class="dr-main-container-brand-top">
+						<div class="member_box">
+							<div class="member_top">
+								<div class="preview">
+									<img class="imghead" style='visibility:hidden;' onload="this.style.visibility='visible'" border="0" src=""
+									 width="150" height="150" onClick="$('.screen-big .previewImg').click();">
+								</div>
+								<input class="previewImg" type="file" onChange="previewImage(this,1)" style="display: none;">
+								<div class="memeber_descript">
+									<span class="dr_zn dr_hide">尊敬的</span><span class="dr_en dr_hide">Welcome</span><span class="phone_code"></span>
+									<span class="dr_zn dr_hide">,您好</span>
+								</div>
+							</div>
+							<div class="product-type">
+								<div class="type-kind type-active" index="1"><span class="dr_zn dr_hide">个人信息</span><span class="dr_en dr_hide">Info:</span></div>
+								<div class="type-kind" index="2"><span class="dr_zn dr_hide">修改密码</span><span class="dr_en dr_hide">Change
+										password</span></div>
+							</div>
+
+							<div class="info_box">
+								<div class="kind-type info">
+									<div class="form_show">
+										<div class="input-group input-group-lg">
+											<label><span class="dr_zn dr_hide">基本信息:</span><span class="dr_en dr_hide">Info:</span></label>
+											<div class="input-right">
+												<input type="tel" maxlength="11" autocomplete="off" class="r_phone form-control" placeholder="phone">
+											</div>
+
+										</div>
+									</div>
+									<div class="form_detail">
+										<div>
+											<label><span class="dr_zn dr_hide">会员卡号:</span><span class="dr_en dr_hide">Card number</span></label>
+											<div class="input-right">
+												<a class="truss dr_zn dr_hide" onclick="showHide()">绑定会员卡号</a>
+												<a class="truss dr_en dr_hide" onclick="showHide()">Bind the member card</a>
+											</div>
+										</div>
+										<div>
+											<label for="l_mail"> <span class="dr_zn dr_hide">邮箱:</span><span class="dr_en dr_hide">Email:</span></label>
+											<div class="input-right">
+												<span id="l_mail" class="mail"></span>
+											</div>
+										</div>
+										<div>
+											<labe><span class="dr_zn dr_hide">性别：</span><span class="dr_en dr_hide">Sex:</span></labe>
+											<div class="input-right sex_box">
+												<label class="radio-inline">
+													<input type="radio" class="m_male" name="b_sex" value="0"> <span class="dr_zn dr_hide">男</span><span class="dr_en dr_hide">Male</span>
+												</label>
+												<label class="radio-inline">
+													<input type="radio" class="m_female" name="b_sex" value="1"> <span class="dr_zn dr_hide">女</span><span
+													 class="dr_en dr_hide">Female</span>
+												</label>
+											</div>
+										</div>
+										<div>
+											<label><span class="dr_zn dr_hide">生日：</span><span class="dr_en dr_hide">Birth:</span></label>
+											<div class="input-right">
+												<span class="birth_time"></span>
+											</div>
+										</div>
+									</div>
+									<div class="address_box">
+										<div>
+											<label><span class="dr_zn dr_hide">所在地区：</span><span class="dr_en dr_hide">Area:</span></label>
+											<div class="input-right dr_zn dr_hide city_zn_box">
+												<select class="form-control province" name="">
+													<option value=""></option>
+												</select>
+												<select class="form-control city" name="">
+													<option value=""></option>
+												</select>
+												<select class="form-control area" name="">
+													<option value=""></option>
+												</select>
+											</div>
+											<div class="input-right dr_en dr_hide city_en_box">
+												<select class="form-control province" name="">
+													<option value=""></option>
+												</select>
+												<select class="form-control city" name="">
+													<option value=""></option>
+												</select>
+												<select class="form-control area" name="">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div>
+											<label><span class="dr_zn dr_hide">街道地址：</span><span class="dr_en dr_hide">Address:</span></label>
+											<div class="input-right">
+												<input type="text" autocomplete="off" value="" class="form-control m_address" placeholder="address">
+											</div>
+										</div>
+										<div class="btn btn-update">
+											<span class="dr_zn dr_hide">提交</span><span class="dr_en dr_hide">Submit</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="kind-type update_box dr_hide">
+									<div class="input-group input-group-lg">
+										<label><span class="dr_zn dr_hide">原密码:</span><span class="dr_en dr_hide">Original:</span></label>
+										<div class="input-right">
+											<input type="password" autocomplete="new-password" value="" class="m_old_pwd form-control" placeholder="original password">
+										</div>
+
+									</div>
+									<div class="input-group input-group-lg">
+										<label><span class="dr_zn dr_hide">新密码:</span><span class="dr_en dr_hide">New:</span></label>
+										<div class="input-right">
+											<input type="password" value="" autocomplete="new-password" class="m_new_pwd form-control" placeholder="new password">
+										</div>
+									</div>
+									<div class="input-group input-group-lg">
+										<label><span class="dr_zn dr_hide">确认密码:</span><span class="dr_en dr_hide">Confirm:</span></label>
+										<div class="input-right">
+											<input type="password" value="" autocomplete="new-password" class="m_s_pwd form-control" placeholder="confirm">
+										</div>
+									</div>
+									<div class="btn btn-update-pwd">
+
+										<span class="dr_zn dr_hide">提交</span><span class="dr_en dr_hide">Submit</span>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="vip_dialog_bg dr_hide">
+				<div class="vip_box">
+					<div class="vip_dialog">
+						<div class="rain_SCTXT">
+
+							<span class="dr_zn dr_hide">会员卡号绑定</span>
+							<span class="dr_en dr_hide">Binding of member card </span>
+							<div class="rain_SCTXTN"><a href="javascript:void(0);" onclick="closeHide()"><img src="../image/ZHN.png"></a></div>
+						</div>
+						<ul class="rain_SCTXB rain_HYKHBDB">
+							<li class="rain_SCTXBM rain_HYKHBDBM">
+								<label>
+									<span class="dr_zn dr_hide">请扫描二维码前往官网微信公众号绑定会员卡号</span>
+									<span class="dr_en dr_hide">Scan the qr code to bind membership card number</span>
+								</label>
+								<img src="../image/wechat.jpg">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="dr-main-footer other-footer screen-big">
+
+		</div>
+		<div class="other-main no_nav screen-small">
+			<div class="common-top">
+				<div class="main-top">
+
+				</div>
+			</div>
+			<div class="main-content">
+				<!--        <div class="product-img">-->
+				<!--            <img src="../image/shops.png" alt="">-->
+				<!--        </div>-->
+				<div class="member_top">
+					<div class="preview">
+						<img style='visibility:hidden;' onload="this.style.visibility='visible'" class="imghead" border="0" src="" width="150"
+						 height="150" onClick="$('.screen-small .previewImg').click();">
+					</div>
+					<input type="file" onChange="previewImage(this,0)" style="display: none;" class="previewImg">
+					<div class="memeber_descript">
+						<span class="dr_zn dr_hide">尊敬的</span><span class="dr_en dr_hide">Welcome</span><span class="phone_code"></span>
+						<span class="dr_zn dr_hide">,您好</span>
+					</div>
+				</div>
+				<div class="swiper-nav-title swiper-pagination">
+
+				</div>
+				<div class="main-content-bottom">
+					<div class="main-content-tab" id="swiper-nav">
+						<ul class="swiper-wrapper main-nav">
+							<div class="swiper-slide news">
+								<div class="member_box">
+
+									<div class="info_box">
+										<div class="kind-type info">
+											<div class="form_show">
+												<div class="input-group input-group-lg">
+													<label><span class="dr_zn dr_hide">信息:</span><span class="dr_en dr_hide">Info:</span></label>
+													<div class="input-right">
+														<input onfocus="Focus()" onblur="Blur()" type="tel" maxlength="11" autocomplete="off" id="p_phone" class="r_phone form-control"
+														 placeholder="phone">
+													</div>
+												</div>
+											</div>
+											<div class="form_detail">
+												<div>
+													<label>
+														<span class="dr_zn dr_hide">会员卡号</span>
+														<span class="dr_en dr_hide">Card number</span>
+													</label>
+													<div class="input-right">
+														<a class="truss" onclick="showHide()">
+															<span class="dr_zn dr_hide">绑定会员卡号</span>
+															<span class="dr_en dr_hide">Bind the member card</span>
+														</a>
+													</div>
+												</div>
+												<div>
+													<label>
+														<span class="dr_zn dr_hide">邮箱:</span>
+														<span class="dr_en dr_hide">Email:</span>
+													</label>
+													<div class="input-right">
+														<span class="mail">Inter_xLi@163.com</span>
+													</div>
+												</div>
+												<div>
+													<label>
+														<span class="dr_zn dr_hide">性别:</span>
+														<span class="dr_en dr_hide">Sex:</span>
+													</label>
+													<div class="input-right sex_box">
+														<label class="radio-inline">
+															<input type="radio" class="m_male" name="s_sex" value="0"> <span class="dr_zn dr_hide">男</span><span
+															 class="dr_en dr_hide">Male</span>
+														</label>
+														<label class="radio-inline">
+															<input type="radio" class="m_female" name="s_sex" value="1"> <span class="dr_zn dr_hide">女</span><span
+															 class="dr_en dr_hide">Female</span>
+														</label>
+													</div>
+												</div>
+												<div>
+													<label><span class="dr_zn dr_hide">生日：</span><span class="dr_en dr_hide">Birth:</span></label>
+													<div class="input-right">
+														<span class="birth_time">1998-04-10</span>
+													</div>
+												</div>
+											</div>
+											<div class="address_box">
+												<div>
+													<label><span class="dr_zn dr_hide">地区：</span><span class="dr_en dr_hide">Area:</span></label>
+													<div class="input-right dr_zn dr_hide city_zn_box">
+														<select class="form-control province" name="">
+															<option value=""></option>
+														</select>
+														<select class="form-control city" name="">
+															<option value=""></option>
+														</select>
+														<select class="form-control area" name="">
+															<option value=""></option>
+														</select>
+													</div>
+													<div class="input-right dr_en dr_hide city_en_box">
+														<select class="form-control province" name="">
+															<option value=""></option>
+														</select>
+														<select class="form-control city" name="">
+															<option value=""></option>
+														</select>
+														<select class="form-control area" name="">
+															<option value=""></option>
+														</select>
+													</div>
+												</div>
+												<div>
+													<label><span class="dr_zn dr_hide">地址：</span><span class="dr_en dr_hide">Address:</span></label>
+													<div class="input-right">
+														<input onfocus="Focus()" onblur="Blur()" type="text" autocomplete="off" value="" class="form-control m_address">
+													</div>
+												</div>
+												<div class="btn btn-update"><span class="dr_zn dr_hide">提交</span><span class="dr_en dr_hide">Submit</span></div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide news">
+								<div class="member_box">
+									<div class="kind-type update_box">
+										<div class="input-group input-group-lg">
+											<label><span class="dr_zn dr_hide">原密码:</span><span class="dr_en dr_hide">Original:</span></label>
+											<div class="input-right">
+												<input onfocus="Focus()" onblur="Blur()" type="password" autocomplete="new-password" value="" class="m_old_pwd form-control"
+												 placeholder="old password">
+											</div>
+
+										</div>
+										<div class="input-group input-group-lg">
+											<label><span class="dr_zn dr_hide">新密码:</span><span class="dr_en dr_hide">New:</span></label>
+											<div class="input-right">
+												<input onfocus="Focus()" onblur="Blur()" type="password" value="" autocomplete="new-password" class="m_new_pwd form-control"
+												 placeholder="new password">
+											</div>
+										</div>
+										<div class="input-group input-group-lg">
+											<label><span class="dr_zn dr_hide">确认密码:</span><span class="dr_en dr_hide">Confirm:</span></label>
+											<div class="input-right">
+												<input onfocus="Focus()" onblur="Blur()" type="password" value="" autocomplete="new-password" class="m_s_pwd form-control"
+												 placeholder="Confirm password">
+											</div>
+										</div>
+										<div class="btn btn-update-pwd">
+											<span class="dr_zn dr_hide">提交</span><span class="dr_en dr_hide">Submit</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="common-dialog">
+
+			</div>
+			<div class="menu-list">
+
+			</div>
+			<div class="vip_dialog_bg dr_hide">
+				<div class="vip_box">
+					<div class="vip_dialog">
+						<div class="rain_SCTXT">
+
+							<span class="dr_zn dr_hide">会员卡号绑定</span>
+							<span class="dr_en dr_hide">Binding of member card </span>
+							<div class="rain_SCTXTN"><a href="javascript:void(0);" onclick="closeHide()"><img src="../image/ZHN.png"></a></div>
+						</div>
+						<ul class="rain_SCTXB rain_HYKHBDB">
+							<li class="rain_SCTXBM rain_HYKHBDBM">
+								<label>
+									<span class="dr_zn dr_hide">请扫描二维码前往官网微信公众号绑定会员卡号</span>
+									<span class="dr_en dr_hide">Scan the qr code to bind membership card number</span>
+								</label>
+								<img src="../image/wechat.jpg">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/swiper/swiper.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="../js/remAdaptation.js"></script>
+	<script src="../js/toast.js"></script>
+	<script>
+		document.write('<script language="javascript" src="../js/dr-main.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<script src="../js/time-history.js"></script>
+	<!--<script src="../js/seminar.js"></script>-->
+	<script src="../js/jquery.shCircleLoader.js"></script>
+	<script>
+		document.write('<script language="javascript" src="../js/main.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+	<script>
+		document.write('<script language="javascript" src="../js/member.js?v=' + new Date().getTime() + '"><\/script\>');
+	</script>
+	<!-- 百度统计 -->
+	<script type="text/javascript">
+		document.write("<div style='display:none;'>");//增加一个display:none的DIV
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe2679b0698117173382a65620afd3268' type='text/javascript'%3E%3C/script%3E"));
+		document.write("</div>");//关闭DIV标签
+	</script>
+	
+	<!-- 百度商桥 -->
+	<script type="text/javascript">
+		document.write("<div style='display:none;'>");//增加一个display:none的DIV
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb3d80609ff324ecc73b0d4f951b50e81' type='text/javascript'%3E%3C/script%3E"));
+		document.write("</div>");//关闭DIV标签
+	</script>
+	
+	 
+	<!--植物医生GA代码：-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-53569307-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	<script type="text/javascript">
+	    document.write(decodeURI("%3Cscript src='"+ctx+"/visit_log?url=")+encodeURIComponent(document.location.href)+decodeURI("&referrer=")+encodeURIComponent(document.referrer)+decodeURI("' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</html>
